@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Хедер-->
-    <header>
-            <a href="WebStudio">WebStudio</a>
+    <header class="portfolio-header">
+            <a href="./index.html" class="link">WebStudio</a>
             <!--Основна навігація-->
             <nav>
-                <ul>
+                <ul class="site-nav">
                     <li>
-                        <a href="index.html">Студия</a>
+                        <a href="./index.html" class="link">Студия</a>
                     </li>
                     <li>
-                        <a href="">Портфолио</a>
+                        <a href="./portfolio.html" class="link">Портфолио</a>
                     </li>
                     <li>
-                        <a href="">Контакты</a>
+                        <a href="" class="link">Контакты</a>
                     </li>
                 </ul>
         
             </nav>
             <!--Контакти-->
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="contacts-list"> 
+                <li class="list-item">
+                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="list-item">
+                    <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
                 </li>
         
             </ul>
@@ -40,71 +44,73 @@
     <main>
         <h1 hidden>Основний контент</h1>
         <!--Фільтри-->   
-        <section>
+        <section class="main-filter">
             <h2 hidden>Фильтри</h2>
-            <button type="button">Веб-сайты</button>
-            <button type="button">Все</button>
-            <button type="button">Приложения</button>
-            <button type="button">Дизайн</button>
-            <button type="button">Маркетинг</button>
+            <ul class="main-buttons">
+                <li><button type="button" class="item-buttons">Веб-сайты</button></li>
+                <li><button type="button" class="item-buttons">Дизайн</button></li>
+                <li><button type="button" class="item-buttons">Маркетинг</button></li>
+                <li><button type="button" class="item-buttons">Все</button></li>
+                <li><button type="button" class="item-buttons">Приложения</button></li> 
+            </ul>
         </section>
         <!--Проекти-->
         <section>
             <h2 hidden>Проекти</h2>
             <!--Технокряк-->
             <section>
-                <a href=""><img src="./img/techno.jpg" alt="ноутбук" width="370" height="294">ноутбук</a>
-                <h3>Технокряк</h3>
-                <p>Веб-сайт</p>
+                <a href=""><img src="./img/portfolio/projects/techno.jpg" alt="ноутбук" width="370" height="294">ноутбук</a>
+                <h3 class="section-title">Технокряк</h3>
+                <p class="section-text">Веб-сайт</p>
             </section>
-            
+
             <!--Постер-->
-            <section>
-                <a href=""><img src="./img/orlean.jpg" alt="постер гри у баскетбол" width="370" height="294">постер гри у баскетбол</a>
-                <h3 lang="en">Постер New Orlean vs Golden Star</h3>
-                <p>Дизайн</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/orlean.jpg" alt="постер гри у баскетбол" width="370" height="294">постер гри у баскетбол</a>
+                <h3 lang="en" class="section-title">Постер New Orlean vs Golden Star</h3>
+                <p class="section-text">Дизайн</p>
             </section>
             <!--Prime-->
-            <section>
-                <a href=""><img src="./img/prime.jpg" alt="наушники" width="370" height="294">наушники</a>
-                <h3 lang="en">Проект Prime</h3>
-                <p>Маркетинг</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/prime.jpg" alt="наушники" width="370" height="294">наушники</a>
+                <h3 lang="en" class="section-title">Проект Prime</h3>
+                <p class="section-text">Маркетинг</p>
             </section>
             <!--Boxes-->
-            <section>
-                <a href=""><img src="./img/boxes.jpg" alt="коробки" width="370" height="294">коробки</a>
-                <h3 lang="en">Проект Boxes</h3>
-                <p>Приложение</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/boxes.jpg" alt="коробки" width="370" height="294">коробки</a>
+                <h3 lang="en" class="section-title">Проект Boxes</h3>
+                <p class="section-text">Приложение</p>
             </section>
             <!--No borders-->
-            <section>
-                <a href=""><img src="./img/noborders.jpg" alt="монитор" width="370" height="294">монитор</a>
-                <h3 lang="en">Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/noborders.jpg" alt="монитор" width="370" height="294">монитор</a>
+                <h3 lang="en" class="section-title">Inspiration has no Borders</h3>
+                <p class="section-text">Веб-сайт</p>
             </section>
             <!--Limited Edidtion-->
-            <section>
-                <a href=""><img src="./img/limed.jpg" alt="книга" width="370" height="294">книга</a>
-                <h3 lang="en">Издание Limited Edition</h3>
-                <p>Дизайн</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/limed.jpg" alt="книга" width="370" height="294">книга</a>
+                <h3 lang="en" class="section-title">Издание Limited Edition</h3>
+                <p class="section-text">Дизайн</p>
             </section>
             <!--Проект Lab-->
-            <section>
-                <a href=""><img src="./img/lab.jpg" alt="значок" width="370" height="294">значок</a>
-                <h3 lang="en">Проект LAB</h3>
-                <p>Маркетинг</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/lab.jpg" alt="значок" width="370" height="294">значок</a>
+                <h3 lang="en" class="section-title">Проект LAB</h3>
+                <p class="section-text">Маркетинг</p>
             </section>
             <!--Business-->
-            <section>
-                <a href=""><img src="./img/business.jpg" alt="ноутбук на котором набирают текст" width="370" height="294">ноутбук на котором набирают текст</a>
-                <h3 lang="en">Growing Business</h3>
-                <p>Приложение</p>
+            <section class="section">
+                <a href=""><img src="./img/portfolio/projects/business.jpg" alt="ноутбук на котором набирают текст" width="370" height="294">ноутбук на котором набирают текст</a>
+                <h3 lang="en" class="section-title">Growing Business</h3>
+                <p class="section-text">Приложение</p>
             </section>
         </section>
     </main>
     <!--Футер-->
     <footer>
-                <a href="WebStudio">WebStudio</a>
+                <a class="logo" href="WebStudio">WebStudio</a>
                 <address>
                     <ul>
                         <li>

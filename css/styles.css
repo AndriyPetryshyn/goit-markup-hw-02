@@ -1,0 +1,63 @@
+:root{
+    --primary-text-color:#212121;
+    --accent-color:#2196F3;
+    --secondary-color:#757575;
+    --background-color:#E5E5E5;
+    --backround-btncolor:#F5F4FA;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#E5E5E5;
+    color: #212121;
+}
+/* Навігація */
+.portfolio-header .link{
+    color: #000000;
+}
+.portfolio-header .link:hover,
+.portfolio-header .link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+.list-item .link:hover,
+.list-item .link:focus {
+    color: var(--accent-color);
+}
+.list-item .link {
+    color: var(--secondary-color);
+}
+
+.main-buttons .item-buttons {
+    cursor: pointer;
+}
+.main-buttons .item-buttons:hover, 
+.main-buttons .item-buttons:focus {
+    color: var(--accent-color);
+}
+.main-buttons .item-buttons {
+    color: var(--primary-text-color);
+    background-color: var(--backround-btncolor);
+}
+/*Projects*/
+.section-title {
+    color: var(--primary-text-color);
+}
+.section-text {
+    color: var(--secondary-color);
+}
+
+
+/* основний колір тексту #212121 */
+/* другорядний колір тексту #757575 */
+/* білий #FFFFFF */
+/* акцент #2196F3 */
+/* фон #E5E5E5 */
+
+
