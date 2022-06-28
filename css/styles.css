@@ -26,6 +26,9 @@ body {
 .site-nav .link {
     color: var(--primary-text-color);
 }
+.site-nav .link .current {
+    color: var(--accent-color);
+}
 .list-item .link:hover,
 .list-item .link:focus {
     color: var(--accent-color);
@@ -37,11 +40,11 @@ body {
 .main-buttons .item-buttons {
     cursor: pointer;
 }
-.main-buttons .item-buttons:hover, 
-.main-buttons .item-buttons:focus {
+.filter-buttons .item-buttons:hover, 
+.filter-buttons .item-buttons:focus {
     color: var(--accent-color);
 }
-.main-buttons .item-buttons {
+.filter-buttons .item-buttons {
     color: var(--primary-text-color);
     background-color: var(--backround-btncolor);
 }
