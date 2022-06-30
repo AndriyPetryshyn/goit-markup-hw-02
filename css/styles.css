@@ -1,24 +1,50 @@
+/* Портфоліо */
 :root{
     --primary-text-color:#212121;
     --accent-color:#2196F3;
     --secondary-color:#757575;
     --background-color:#E5E5E5;
     --backround-btncolor:#F5F4FA;
+    --backround-navcolor:#FFFFFF;
 }
 body {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
     background-color:#E5E5E5;
     color: #212121;
 }
-/* Навігація */
-.portfolio-header .link{
-    color: #000000;
+.list {
+    list-style: none;
 }
-.portfolio-header .link:hover,
-.portfolio-header .link:focus{
+/* LOGO */
+.logo .logo-link{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+    text-decoration: none;
+}
+.logo .link:hover,
+.logo .link:focus{
     color: var(--accent-color);
 }
+.logo-accent {
+    color: var(--accent-color);
+}
+/* Navigation */
 
+.nav,
+.contacts-list{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav-item .link{
+    text-decoration: none;
+}
 .site-nav .link:hover, 
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -26,7 +52,7 @@ body {
 .site-nav .link {
     color: var(--primary-text-color);
 }
-.site-nav .link .current {
+.site-nav .link.current {
     color: var(--accent-color);
 }
 .list-item .link:hover,
@@ -36,31 +62,46 @@ body {
 .list-item .link {
     color: var(--secondary-color);
 }
-
-.main-buttons .item-buttons {
+.list-item .link{
+    text-decoration: none;
+}
+/* Filters */
+.filter-list .filter-item {
     cursor: pointer;
 }
-.filter-buttons .item-buttons:hover, 
-.filter-buttons .item-buttons:focus {
+.filter-list .filter-item:hover, 
+.filter-list .filter-item:focus {
     color: var(--accent-color);
 }
-.filter-buttons .item-buttons {
-    color: var(--primary-text-color);
-    background-color: var(--backround-btncolor);
+.filter-list .filter-item .current{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.filter-item {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
 }
 /*Projects*/
-.section-title {
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
-.section-text {
+.project-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
     color: var(--secondary-color);
+}
+/* Footer */
+.adress .link {
+    text-decoration: none;
 }
 
 
-/* основний колір тексту #212121 */
-/* другорядний колір тексту #757575 */
-/* білий #FFFFFF */
-/* акцент #2196F3 */
-/* фон #E5E5E5 */
 
 
