@@ -81,11 +81,6 @@ body {
     line-height: 1.14;
     text-align: center;   
 }
-.features,
-.occupation{
-    background-color: var(--background-color);
-}
-
 /* Hero-styles */
 .hero {
     background-color: var(--bgc-col-dark);
@@ -99,12 +94,10 @@ body {
     color: var(--main-color);
 }
 .btn-hero {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-color);
     background-color: var(--accent-color);
@@ -135,7 +128,6 @@ body {
     text-align: center;
 }
 .team-text {
-    font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--secondary-color);
@@ -144,6 +136,9 @@ body {
 /* Buttons */
 .btn-item {
     cursor: pointer;
+}
+.btn-list {
+    font-family: inherit;
 }
 .btn-item:hover, 
 .btn-item:focus {
@@ -180,9 +175,7 @@ body {
 }
 /* Footer */
 .address {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     background-color: var(--bgc-col-dark);
